@@ -21,11 +21,11 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Portfolio] <a name="Portfolio"></a>
+# 📖 [Portfolio-setup-and-mobile-first] <a name="Portfolio-setup-and-mobile-first"></a>
 
 I use some html and add some styles for this project.
 
-**[Portfolio]** Mobile version of my portfolio
+**[Portfolio-setup-and-mobile-first]** Mobile version of my portfolio
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -38,7 +38,7 @@ HTML,CSS
 ### Key Features <a name="key-features"></a>
 
 - **[Added HTML file]**
-- **[Add CSS file]**
+- **[Added CSS file]**
 - **[Github Flow Execution]**
 - **[Added linters]**
 
@@ -46,7 +46,7 @@ HTML,CSS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://otmane-echchafyky.github.io/Portfolio/)
+- [Live Demo Link](https://otmane-echchafyky.github.io/Portfolio-mobile-version/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +63,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/OTMANE-ECHCHAFYKY/Portfolio.git
+git clone https://github.com/OTMANE-ECHCHAFYKY/Portfolio-mobile-version.git
 
 ### Run tests
 
@@ -84,7 +84,7 @@ You can deploy this project using:
 
 - GitHub: [@OTMANE-ECHCHAFYKY](https://github.com/OTMANE-ECHCHAFYKY)
 - Twitter: [@EchchafykyO](https://twitter.com/EchchafykyO)
-- LinkedIn: [@otmane-echchafyky](<https://[linkedin.com/in/linkedinhandle](https://www.linkedin.com/in/otmane-echchafyky-125801248/)>)
+- LinkedIn: [@otmane-echchafyky](https://www.linkedin.com/in/otmane-echchafyky-125801248/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
