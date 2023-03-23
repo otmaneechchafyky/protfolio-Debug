@@ -28,12 +28,12 @@ header {
 }
 
 .logo-placeholder h1 {
-  font-family: "Roboto";
+  font-family: "Roboto" sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .headlines {
@@ -43,14 +43,14 @@ header {
   align-items: center;
   justify-content: center;
   background: #1c1a19;
-  color: #ffffff;
+  color: #fff;
   background-image: url(./assets/Group.png);
   background-repeat: no-repeat;
   background-position: 100% 115%;
 }
 
 .primary-text {
-  font-family: "Crete Round";
+  font-family: "Crete Round" sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -63,7 +63,7 @@ header {
 .supporting-text {
   margin-top: -10%;
   width: 327px;
-  font-family: "Roboto";
+  font-family: "Roboto" sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -73,7 +73,7 @@ header {
 .description {
   margin-top: -3%;
   width: 327px;
-  font-family: "Poppins";
+  font-family: "Poppins" sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
