@@ -25,7 +25,7 @@
 
 I use some html and add some styles for this project.
 
-**[Portfolio]** is a simple introductory project.
+**[Portfolio]** Mobile version of my portfolio
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -64,10 +64,6 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 git clone https://github.com/OTMANE-ECHCHAFYKY/Portfolio.git
-
-### Install
-
-### Usage
 
 ### Run tests
 
