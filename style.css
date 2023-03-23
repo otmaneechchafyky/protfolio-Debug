@@ -28,7 +28,7 @@ header {
 }
 
 .logo-placeholder h1 {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -50,7 +50,7 @@ header {
 }
 
 .primary-text {
-  font-family: 'Crete Round';
+  font-family: "Crete Round";
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -63,7 +63,7 @@ header {
 .supporting-text {
   margin-top: -10%;
   width: 327px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -73,7 +73,7 @@ header {
 .description {
   margin-top: -3%;
   width: 327px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
