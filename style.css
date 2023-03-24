@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
 
-
 body {
   margin: 0;
   padding: 0;
@@ -101,7 +100,6 @@ header {
   cursor: pointer;
 }
 
-
 .work {
   height: 1103.455810546875px;
   padding: 120px 24px 38px 24px;
@@ -136,7 +134,6 @@ header {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -146,13 +143,14 @@ header {
   display: flex;
   margin-top: 0;
 }
-.skills li {
+
+.first-div ul li {
   padding: 8px 10px;
   list-style: none;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 500;
-  color: #091E42;
+  color: #091e42;
   border: 1px solid #8993a4;
   margin-right: 20px;
 }
@@ -201,7 +199,7 @@ header {
 .project-item ul li {
   padding: 8px 10px;
   list-style: none;
-  background-color:#ffffff3d;
+  background-color: #ffffff3d;
   margin-right: 10%;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
