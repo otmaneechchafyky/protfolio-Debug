@@ -27,7 +27,8 @@ header {
   padding: 10px 12px 10px 12px;
 }
 
-.logo-placeholder h1 {
+.logo-placeholder a {
+  text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -90,4 +91,10 @@ header {
 
 .headlines ul li {
   list-style: none;
+}
+
+.btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
 }
