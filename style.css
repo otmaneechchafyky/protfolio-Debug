@@ -46,7 +46,7 @@ header {
   justify-content: center;
   background: #1c1a19;
   color: #fff;
-  background-image: url(./assets/Group.png);
+  background-image: url(./Assets/Group.png);
   background-repeat: no-repeat;
   background-position: 100% 115%;
 }
@@ -172,7 +172,7 @@ header {
   margin-top: 5%;
   color: #fff;
   padding-left: 5%;
-  background-image: url('./assets/bg-project.png');
+  background-image: url('./Assets/bg-project.png');
   background-size: cover;
 }
 
@@ -234,7 +234,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('./assets/about-bg.png');
+  background-image: url('./Assets/about-bg.png');
   background-repeat: no-repeat;
   background-position: 100% 22%;
 }
