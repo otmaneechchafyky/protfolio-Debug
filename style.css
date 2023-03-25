@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: auto;
+}
+
+header {
+  background-color: #3c3a39;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.logo-placeholder {
+  padding: 10px 12px 10px 12px;
+}
+
+.logo-placeholder a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.headlines {
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1c1a19;
+  color: #fff;
+  background-image: url(./assets/Group.png);
+  background-repeat: no-repeat;
+  background-position: 100% 115%;
+}
+
+.primary-text {
+  font-family: "Crete Round", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  width: 327px;
+  color: #ff6b00;
+}
+
+.supporting-text {
+  margin-top: -10%;
+  width: 327px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+}
+
+.description {
+  margin-top: -3%;
+  width: 327px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.icons-container {
+  margin-top: -3%;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  margin-left: -48%;
+}
+
+.headlines ul li {
+  list-style: none;
+}
+
+.btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.work {
+  margin-bottom: 20%;
+  padding: 120px 24px 38px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  text-align: left;
+}
+
+.first-div {
+  margin-top: 20%;
+  color: #091e42;
+}
+
+.first-div h4 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.first-div p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.skills {
+  padding: 0;
+  display: flex;
+  margin-top: 0;
+}
+
+.first-div ul li {
+  padding: 8px 10px;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #091e42;
+  border: 1px solid #8993a4;
+  margin-right: 20px;
+}
+
+.btn-prj {
+  height: 48px;
+  width: 124px;
+  font-size: 17px;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.project-item {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  margin-top: 5%;
+  color: #fff;
+  padding-left: 5%;
+  background-image: url('./assets/bg-project.png');
+  background-size: cover;
+}
+
+.project-item h5 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  margin-bottom: -2%;
+}
+
+.project-item p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 300px;
+}
+
+.project-item ul {
+  display: flex;
+  padding: 0;
+  margin-top: 2%;
+  width: 250px;
+}
+
+.project-item ul li {
+  padding: 8px 10px;
+  list-style: none;
+  background-color: #ffffff3d;
+  margin-right: 10%;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.btn-itm {
+  height: 48px;
+  width: 327px;
+  margin-left: -16px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.about-me {
+  height: 1970px;
+  width: 375px;
+  background: #1c1a19;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./assets/about-bg.png');
+  background-repeat: no-repeat;
+  background-position: 100% 22%;
+}
+
+.about-me h6 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
+  margin-top: 30%;
+}
+
+.about-me .about-descr {
+  width: 327px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: -45%;
+  margin-bottom: 10%;
+  color: #f4f5f7;
+}
+
+.about-me button {
+  height: 48px;
+  width: 156px;
+  padding: 12px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  margin-bottom: 60%;
+  cursor: pointer;
+}
+
+.about-me hr {
+  width: 327px;
+}
+
+.elements {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 30%;
+}
+
+.elem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -70%;
+}
+
+.title2 {
+  display: flex;
+  align-items: center;
+}
+
+.title2 p {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.elem ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.elem ul li {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+.rec {
+  width: 25px;
+  height: 25px;
+}
+
+.rec2 {
+  width: 22px;
+  height: 22px;
+  padding-right: 8%;
+}
+
+.circ {
+  width: 20px;
+  height: 20px;
+  padding-right: 8%;
+}
