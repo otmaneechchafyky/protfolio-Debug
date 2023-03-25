@@ -172,7 +172,7 @@ header {
   margin-top: 5%;
   color: #fff;
   padding-left: 5%;
-  background-image: url('./Assets/bg-project.png');
+  background-image: url('Assets/bg-project.png');
   background-size: cover;
 }
 
