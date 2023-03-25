@@ -229,7 +229,7 @@ header {
 .about-me {
   height: 1970px;
   width: 375px;
-  background: #1C1A19;
+  background: #1c1a19;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -326,4 +326,21 @@ header {
   list-style: none;
   text-align: center;
   margin-bottom: 15%;
+}
+
+.rec {
+  width : 25px;
+  height: 25px;
+}
+
+.rec2 {
+  width : 22px;
+  height: 22px;
+  padding-right: 8%;
+}
+
+.circ {
+  width : 20px;
+  height: 20px;
+  padding-right: 8%;
 }
