@@ -426,6 +426,17 @@ header {
   border: none;
 }
 
+.contact form ul li button:hover {
+  color: #ff6b00;
+  background-color: #fff;
+  border: 1px solid #ff6b00;
+}
+
+.contact form ul li button:active {
+  color: #fff;
+  background-color: #c45303;
+}
+
 .btn-center {
   display: flex;
   justify-content: center;
