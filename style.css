@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
 
-
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +10,7 @@ body {
 li {
   list-style: none;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -357,8 +357,6 @@ header {
   border-bottom: 1px solid #dfe1E6;
 }
 
-
-
 .contact p {
   height: 262px;
   width: 327px;
@@ -374,7 +372,6 @@ header {
   height: 330px;
   width: 95%; 
   margin-right: 25px;
-  margin: 0 auto;
   margin-left: -3.5%;
 }
 
@@ -413,7 +410,6 @@ header {
   text-align: left;
   height: 114px;
   width: 95%;
-  
 }
 
 .contact form ul li button {
@@ -435,20 +431,20 @@ header {
   justify-content: center;
 }
 
-footer {
+.container footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 15px;
 }
 
-footer ul {
+.container footer ul {
   display: flex;
   justify-content: center;
   margin-left: -10%;
 }
 
-footer hr {
+.container footer hr {
   height: 5px;
   width: 134px;
   border-radius: 10px;
