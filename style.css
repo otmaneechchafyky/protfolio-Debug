@@ -711,7 +711,7 @@ section.project-popup span.close-popup:hover {
     align-items: start;
     justify-content: start;
     width: 120%;
-    margin: 0px 114px 130px 0;
+    margin: 0 114px 130px 0;
   }
 
   header.work-heading hr {
@@ -873,15 +873,14 @@ section.project-popup span.close-popup:hover {
   footer hr.last-line {
     display: none;
   }
-
 }
 
 @media only screen and (min-width: 1100px) {
-
-    footer hr.last-line {
-        display: none;
-      }
-
+  
+  footer hr.last-line {
+    display: none;
+  }
+  
   div.contact-heading p {
     font-size: 40px;
     width: 100%;
