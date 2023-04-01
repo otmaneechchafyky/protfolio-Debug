@@ -876,7 +876,12 @@ section.project-popup span.close-popup:hover {
 }
 
 @media only screen and (min-width: 1100px) {
-  
+  div.line-aboutme {
+    padding-left: 141px;
+    padding-right: 141px;
+    margin-top: 100px;
+  }
+
   footer hr.last-line {
     display: none;
   }
@@ -885,12 +890,6 @@ section.project-popup span.close-popup:hover {
     font-size: 40px;
     width: 100%;
     margin-left: -15%;
-  }
-
-  div.line-aboutme {
-    padding-left: 141px;
-    padding-right: 141px;
-    margin-top: 100px;
   }
 
   section#contact {
