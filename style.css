@@ -395,7 +395,7 @@ section.headline-section ul.social-links li {
   margin-right: 10px;
 }
 
-section.headline-section div.headline h1 {
+section.headline-section div.headline .big-title {
   margin: 1px;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
@@ -861,7 +861,7 @@ section.project-popup span.close-popup:hover {
     width: 566px;
   }
 
-  section.headline-section div.headline h1 {
+  section.headline-section div.headline .big-title {
     font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1075,7 +1075,7 @@ section.project-popup span.close-popup:hover {
     width: 566px;
   }
 
-  section.headline-section div.headline h1 {
+  section.headline-section div.headline .big-title {
     font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
