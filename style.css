@@ -164,7 +164,7 @@ body {
 
 .heading {
   width: 100%;
-  height: fit-content;
+  height: auto;
   background-color: var(--color-primary);
 }
 
@@ -348,7 +348,7 @@ body {
 .popup-holder {
   width: fit-content;
   border-radius: 0.3rem;
-  height: fit-content;
+  height: auto;
   margin-top: 15rem;
   background-color: var(--color-white);
   padding: 1rem;
@@ -395,7 +395,7 @@ body {
 
 .popup-description {
   width: inherit;
-  height: fit-content;
+  height: auto;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -939,7 +939,7 @@ body {
 
 .form-input:focus {
   border-bottom: 1px solid var(--color-sccent);
-  border-bottom-width: 100%;
+  border-bottom-width: thin;
 }
 
 .errorMessage {
