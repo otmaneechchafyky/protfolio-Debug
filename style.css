@@ -164,6 +164,7 @@ body {
 
 .heading {
   width: 100%;
+  height: auto;
   background-color: var(--color-primary);
 }
 
@@ -347,6 +348,7 @@ body {
 .popup-holder {
   width: fit-content;
   border-radius: 0.3rem;
+  height: auto;
   margin-top: 15rem;
   background-color: var(--color-white);
   padding: 1rem;
@@ -393,6 +395,7 @@ body {
 
 .popup-description {
   width: inherit;
+  height: auto;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
