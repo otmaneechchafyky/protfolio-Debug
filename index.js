@@ -68,7 +68,7 @@ const projects = [
 
 const works = document.getElementById('card-holder');
 
-for (let i = 0; i < projects.length; i+=1) {
+for (let i = 0; i < projects.length; i += 1) {
   const cardHolder = document.createElement('div');
   cardHolder.innerHTML = `
   <div class="info-holder">
@@ -176,7 +176,7 @@ function createPopup(nbr) {
   document.body.appendChild(popup);
 }
 
-for (let j = 0; j < projects.length; j+=1) {
+for (let j = 0; j < projects.length; j += 1) {
   const showCard = document.getElementById(`cardButton${j}`);
 
   showCard.addEventListener('click', () => {
