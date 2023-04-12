@@ -1,11 +1,11 @@
-const showHideMenu = document.querySelector(".menu-slider");
+const showHideMenu = document.querySelector('.menu-slider');
 function showHide() {
-  showHideMenu.classList.toggle("active");
+  showHideMenu.classList.toggle('active');
 }
-const menuBtn = document.querySelector("#menuBtn");
-menuBtn.addEventListener("click", showHide);
-const xBtn = document.querySelector("#xBtn");
-xBtn.addEventListener("click", showHide);
+const menuBtn = document.querySelector('#menuBtn');
+menuBtn.addEventListener('click', showHide);
+const xBtn = document.querySelector('#xBtn');
+xBtn.addEventListener('click', showHide);
 
 //  popUp
 
@@ -65,12 +65,11 @@ const projects = [
     codeLink: '',
   },
 ];
-console.log(projects);
 
-const works = document.getElementById("card-holder");
+const works = document.getElementById('card-holder');
 
-for (let i = 0; i < projects.length; i++) {
-  const cardHolder = document.createElement("div");
+for (let i = 0; i < projects.length; i+=1) {
+  const cardHolder = document.createElement('div');
   cardHolder.innerHTML = `
   <div class="info-holder">
     <h2 class="project-heading white-font">
@@ -95,11 +94,11 @@ for (let i = 0; i < projects.length; i++) {
     >
   </div>
     `;
-  cardHolder.classList.add("work-card");
+  cardHolder.classList.add('work-card');
   works.appendChild(cardHolder);
 }
 
-const popup = document.createElement("div");
+const popup = document.createElement('div');
 function createPopup(nbr) {
   popup.innerHTML = `
   <div id="popup-container" class="popup-window">
@@ -177,13 +176,13 @@ function createPopup(nbr) {
   document.body.appendChild(popup);
 }
 
-for (let j = 0; j < projects.length; j++) {
-  const showCard = document.getElementById("cardButton" + j);
+for (let j = 0; j < projects.length; j+=1) {
+  const showCard = document.getElementById(`cardButton${j}`);
 
-  showCard.addEventListener("click", () => {
+  showCard.addEventListener('click', () => {
     createPopup(j);
-    const xPopup = document.getElementById("x-popup");
-    xPopup.addEventListener("click", () => {
+    const xPopup = document.getElementById('x-popup');
+    xPopup.addEventListener('click', () => {
       popup.remove();
     });
   });
