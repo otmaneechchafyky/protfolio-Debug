@@ -1,111 +1,107 @@
-const showHideMenu = document.querySelector('.menu-slider');
+const showHideMenu = document.querySelector(".menu-slider");
 function showHide() {
-  showHideMenu.classList.toggle('active');
+  showHideMenu.classList.toggle("active");
 }
-const menuBtn = document.querySelector('#menuBtn');
-menuBtn.addEventListener('click', showHide);
-const xBtn = document.querySelector('#xBtn');
-xBtn.addEventListener('click', showHide);
+const menuBtn = document.querySelector("#menuBtn");
+menuBtn.addEventListener("click", showHide);
+const xBtn = document.querySelector("#xBtn");
+xBtn.addEventListener("click", showHide);
 
-//popUp
+//  popUp
 
 const projects = [
-  { 
-    name: "Data Dashboard Healthcare",
-    img: "./Assets/printing-work1.png",
+  {
+    name: 'Data Dashboard Healthcare',
+    img: './Assets/gym.png',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tags: ["HTML", "CSS", "Ruby"],
-    demoLink: "",
-    codeLink: "",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    tags: ['XML', 'CSS', 'Ruby'],
+    demoLink: '',
+    codeLink: '',
   },
   {
-    name: "Website Portfolio ",
-    img: "./Assets/printing-work1.png",
+    name: 'Website Portfolio',
+    img: './Assets/ex.png',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tags: ["XML", "CSS", "Ruby"],
-    demoLink: "",
-    codeLink: "",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    tags: ['XML', 'CSS', 'Ruby'],
+    demoLink: '',
+    codeLink: '',
   },
   {
-    name: "Title 3",
-    img: "./Assets/gym.png",
+    name: 'Data Dashboard Healthcare',
+    img: './Assets/gym.png',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tags: ["HTML", "CSS", "Ruby"],
-    demoLink: "",
-    codeLink: "",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    tags: ['XML', 'CSS', 'Ruby'],
+    demoLink: '',
+    codeLink: '',
   },
   {
-    name: "Title 4",
-    img: "./Assets/gym.png",
+    name: 'Website Portfolio',
+    img: './Assets/ex.png',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tags: ["HTML", "CSS", "Ruby"],
-    demoLink: "",
-    codeLink: "",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    tags: ['XML', 'CSS', 'Ruby'],
+    demoLink: '',
+    codeLink: '',
   },
   {
-    name: "Title 5",
-    img: "./Assets/gym.png",
+    name: 'Data Dashboard Healthcare',
+    img: './Assets/gym.png',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tags: ["HTML", "Bootstrap", "Ruby"],
-    demoLink: "",
-    codeLink: "",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    tags: ['XML', 'CSS', 'Ruby'],
+    demoLink: '',
+    codeLink: '',
   },
   {
-    name: "Title 6",
-    img: "./Assets/printing-work1.png",
+    name: 'Website Portfolio',
+    img: './Assets/ex.png',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tags: ["HTML", "CSS", "Javascript"],
-    demoLink: "",
-    codeLink: "",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    tags: ['XML', 'CSS', 'Ruby'],
+    demoLink: '',
+    codeLink: '',
   },
 ];
 console.log(projects);
 
-const works = document.getElementById('card-holder');
+const works = document.getElementById("card-holder");
 
-for (let i = 0; i < projects.length; i++){
-
-  const cardHolder = document.createElement('div');
-  cardHolder.innerHTML = 
-  `
+for (let i = 0; i < projects.length; i++) {
+  const cardHolder = document.createElement("div");
+  cardHolder.innerHTML = `
   <div class="info-holder">
     <h2 class="project-heading white-font">
-    ${ projects[i].name}
+    ${projects[i].name}
     </h2>
     <p class="card-description white-font">
-    ${ projects[i].description}
+    ${projects[i].description}
     </p>
     <ul class="tag-list white-font">
 
-      <li class="card-feature-items">${ projects[i].tags[0]}</li>
-      <li class="card-feature-items">${ projects[i].tags[1]}</li>
-      <li class="card-feature-items">${ projects[i].tags[2]}</li>
+      <li class='card-feature-items'>${projects[i].tags[0]}</li>
+      <li class='card-feature-items'>${projects[i].tags[1]}</li>
+      <li class='card-feature-items'>${projects[i].tags[2]}</li>
     </ul>
   </div>
-  <div class="button-section">
+  <div class='button-section'>
     <a
-      id="cardButton${i}"
-      class="pop card-button dark-font seeInfo"
-      href="#popUp"
+      id='cardButton${i}'
+      class='pop card-button dark-font seeInfo'
+      href='#popUp'
       >See Project</a
     >
   </div>
     `;
-    cardHolder.classList.add('work-card')
+  cardHolder.classList.add("work-card");
   works.appendChild(cardHolder);
 }
 
-const popup = document.createElement('div');
-function createPopup(nbr){
-  
-  popup.innerHTML =
-  `
+const popup = document.createElement("div");
+function createPopup(nbr) {
+  popup.innerHTML = `
   <div id="popup-container" class="popup-window">
   <div class="popup-holder">
     <div class="popup-close-btn-holder">
@@ -125,9 +121,9 @@ function createPopup(nbr){
     </div>
     <h1 id="popup-header" class="project-heading">${projects[nbr].name}</h1>
     <ul id="popup-feature" class="popup-tag-list">
-      <li class="card-feature-items popup-feature">${ projects[nbr].tags[0]}</li>
-      <li class="card-feature-items popup-feature">${ projects[nbr].tags[1]}</li>
-      <li class="card-feature-items popup-feature">${ projects[nbr].tags[2]}</li>
+      <li class="card-feature-items popup-feature">${projects[nbr].tags[0]}</li>
+      <li class="card-feature-items popup-feature">${projects[nbr].tags[1]}</li>
+      <li class="card-feature-items popup-feature">${projects[nbr].tags[2]}</li>
     </ul>
     <div class="popup-info">
       <img
@@ -178,17 +174,17 @@ function createPopup(nbr){
     </div>
   </div>
 </div>`;
-document.body.appendChild(popup);
+  document.body.appendChild(popup);
 }
 
-for ( let j = 0; j < projects.length; j++) {
-  const showCard = document.getElementById('cardButton'+j)
+for (let j = 0; j < projects.length; j++) {
+  const showCard = document.getElementById("cardButton" + j);
 
-showCard.addEventListener('click', () => {
-  createPopup(j);
-  const xPopup = document.getElementById('x-popup');
-  xPopup.addEventListener('click', () => {
-    popup.remove();
-  })
-})
+  showCard.addEventListener("click", () => {
+    createPopup(j);
+    const xPopup = document.getElementById("x-popup");
+    xPopup.addEventListener("click", () => {
+      popup.remove();
+    });
+  });
 }
