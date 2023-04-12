@@ -330,7 +330,7 @@ body {
   position: fixed;
   top: 0;
   padding: 3rem 0;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -412,7 +412,7 @@ body {
 }
 
 .popup-btn {
-  color: var(--color-body);
+  color: var(--color-white);
   background-color: var(--color-sccent);
   padding: 1rem;
   display: flex;
@@ -421,11 +421,20 @@ body {
   border: 1px solid var(--color-sccent);
 }
 
+.popup-btn svg path {
+  fill: var(--color-white);
+}
+
 .popup-btn:hover {
   background-color: var(--color-secondary);
   color: var(--color-sccent);
   border: 1px solid var(--color-sccent);
 }
+
+.popup-btn:hover svg path {
+  fill: var(--color-sccent);
+}
+
 
 @media screen and (min-width: 768px) {
   .popup-info {
