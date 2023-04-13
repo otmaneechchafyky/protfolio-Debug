@@ -999,14 +999,13 @@ body {
   color: red;
 }
 
-.input-control.success input{
+.input-control.success input {
   border-color: green;
 }
 
-.input-control.error input{
+.input-control.error input {
   border-color: red;
 }
-
 
 .form-message {
   width: 100%;
