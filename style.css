@@ -345,7 +345,7 @@ body {
   display: flex;
 }
 
- .popup-holder {
+.popup-holder {
   border-radius: 0.3rem;
   height: auto;
   background-color: var(--color-white);
@@ -367,7 +367,7 @@ body {
   justify-content: space-between;
 }
 
-.project-heading {
+.project-heading-pop {
   font-family: 'Roboto', sans-serif !important;
   font-size: 32px !important;
   font-weight: 700 !important;
@@ -396,7 +396,7 @@ body {
   font-weight: 600;
   line-height: 16px;
   text-align: left;
-  border: 1px solid #979493
+  border: 1px solid #979493;
 }
 
 .popup-feature {
@@ -467,7 +467,6 @@ body {
 .popup-btn:hover svg path {
   fill: var(--color-sccent);
 }
-
 
 @media screen and (min-width: 768px) {
   .popup-info {
