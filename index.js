@@ -17,7 +17,7 @@ const projects = [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description2:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-      tags: ['XML', 'CSS', 'Ruby'],
+    tags: ['XML', 'CSS', 'Ruby'],
     demoLink: '',
     codeLink: '',
   },
@@ -28,7 +28,7 @@ const projects = [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description2:
     'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-      tags: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    tags: ['HTML', 'Bootstrap', 'Ruby on rails'],
     demoLink: '',
     codeLink: '',
   },
@@ -117,7 +117,7 @@ function createPopup(nbr) {
   <div class="popup-holder">
     <div class="popup-close-btn-holder">
       <div class="title-xbtn">
-        <h1 id="popup-header" class="project-heading">${projects[nbr].name}</h1>
+        <h1 id="popup-header" class="project-heading project-heading-pop">${projects[nbr].name}</h1>
         <svg
           id="x-popup"
           class=".xBtn"
