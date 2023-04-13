@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
 :root {
   --color-primary: #1c1a19;
   --color-sccent: #ff6b00;
@@ -324,13 +326,11 @@ body {
   }
 }
 
-/* popup window */
 .popup-window {
   z-index: 10;
   position: fixed;
   top: 0;
-  padding: 3rem 0;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -341,17 +341,22 @@ body {
   overflow: scroll;
 }
 
+/* @media (min-width: 768px) {
+  .popup-window {
+    margin
+  }
+} */
+
 .popUp {
   display: flex;
 }
 
 .popup-holder {
-  width: fit-content;
   border-radius: 0.3rem;
   height: auto;
-  margin-top: 15rem;
   background-color: var(--color-white);
   padding: 1rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -359,10 +364,27 @@ body {
 
 .popup-close-btn-holder {
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  gap: 36px;
 }
 
-.popup-close-btn-holder img {
+.title-xbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-heading-pop {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 44px !important;
+  text-align: left;
+  color: #172b4d;
+  width: 90%;
+}
+
+.popup-close-btn-holder svg {
   cursor: pointer;
 }
 
@@ -376,9 +398,24 @@ body {
   width: 100%;
 }
 
+.popup-tag-list li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  border: 1px solid #979493;
+}
+
 .popup-feature {
   background-color: var(--color-white);
   border: 1px solid var(--color-body);
+}
+
+.popup-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .popup-image {
@@ -390,7 +427,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  gap: 1.5rem;
 }
 
 .popup-description {
@@ -408,17 +445,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   row-gap: 1rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .popup-btn {
-  color: var(--color-body);
+  width: 45%;
+  height: 48px;
+  color: var(--color-white);
   background-color: var(--color-sccent);
   padding: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 24px;
   text-decoration: none;
   border: 1px solid var(--color-sccent);
+}
+
+.popup-btn svg path {
+  fill: var(--color-white);
 }
 
 .popup-btn:hover {
@@ -427,16 +472,24 @@ body {
   border: 1px solid var(--color-sccent);
 }
 
+.popup-btn:hover svg path {
+  fill: var(--color-sccent);
+}
+
 @media screen and (min-width: 768px) {
   .popup-info {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
-    column-gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.55rem;
   }
 
   .popup-btn-holder {
     justify-content: left;
     column-gap: 2rem;
+  }
+
+  .popup-btn {
+    width: 30%;
   }
 
   .popup-holder {
@@ -942,8 +995,16 @@ body {
   border-bottom-width: thin;
 }
 
-.errorMessage {
+.error {
   color: red;
+}
+
+.input-control.success input {
+  border-color: green;
+}
+
+.input-control.error input {
+  border-color: red;
 }
 
 .form-message {
