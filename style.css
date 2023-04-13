@@ -374,6 +374,7 @@ body {
   line-height: 44px !important;
   text-align: left;
   color: #172b4d;
+  width: 90%;
 }
 
 .popup-close-btn-holder svg {
@@ -987,9 +988,18 @@ body {
   border-bottom-width: thin;
 }
 
-.errorMessage {
+.error {
   color: red;
 }
+
+.input-control.success input{
+  border-color: green;
+}
+
+.input-control.error input{
+  border-color: red;
+}
+
 
 .form-message {
   width: 100%;
