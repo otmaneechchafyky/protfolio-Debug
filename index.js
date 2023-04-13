@@ -11,54 +11,66 @@ xBtn.addEventListener('click', showHide);
 
 const projects = [
   {
-    name: 'Data Dashboard Healthcare',
-    img: './Assets/gym.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['XML', 'CSS', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
-  },
-  {
-    name: 'Website Portfolio',
+    name: 'Keeping track of hundreds  of components website',
     img: './Assets/ex.png',
     description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description2:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['XML', 'CSS', 'Ruby'],
+      tags: ['XML', 'CSS', 'Ruby'],
     demoLink: '',
     codeLink: '',
   },
   {
-    name: 'Data Dashboard Healthcare',
-    img: './Assets/gym.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['XML', 'CSS', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
-  },
-  {
-    name: 'Website Portfolio',
+    name: 'Multi Post Stories',
     img: './Assets/ex.png',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['XML', 'CSS', 'Ruby'],
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description2:
+    'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+      tags: ['HTML', 'Bootstrap', 'Ruby on rails'],
     demoLink: '',
     codeLink: '',
   },
   {
-    name: 'Data Dashboard Healthcare',
-    img: './Assets/gym.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['XML', 'CSS', 'Ruby'],
-    demoLink: '',
-    codeLink: '',
-  },
-  {
-    name: 'Website Portfolio',
+    name: 'Multi Post Stories',
     img: './Assets/ex.png',
     description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description2:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    tags: ['XML', 'CSS', 'Ruby'],
+    demoLink: '',
+    codeLink: '',
+  },
+  {
+    name: 'Multi Post Stories',
+    img: './Assets/ex.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description2:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    tags: ['XML', 'CSS', 'Ruby'],
+    demoLink: '',
+    codeLink: '',
+  },
+  {
+    name: 'Multi Post Stories',
+    img: './Assets/ex.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description2:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
+    tags: ['XML', 'CSS', 'Ruby'],
+    demoLink: '',
+    codeLink: '',
+  },
+  {
+    name: 'Multi Post Stories',
+    img: './Assets/ex.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description2:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
     tags: ['XML', 'CSS', 'Ruby'],
     demoLink: '',
@@ -76,7 +88,7 @@ for (let i = 0; i < projects.length; i += 1) {
     ${projects[i].name}
     </h2>
     <p class="card-description white-font">
-    ${projects[i].description}
+    ${projects[i].description2}
     </p>
     <ul class="tag-list white-font">
 
@@ -104,26 +116,28 @@ function createPopup(nbr) {
   <div id="popup-container" class="popup-window">
   <div class="popup-holder">
     <div class="popup-close-btn-holder">
-      <svg
-        id="x-popup"
-        class=".xBtn"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="#67798e"
-          d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 13.4Z"
-        />
-      </svg>
+      <div class="title-xbtn">
+        <h1 id="popup-header" class="project-heading">${projects[nbr].name}</h1>
+        <svg
+          id="x-popup"
+          class=".xBtn"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#67798e"
+            d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 13.4Z"
+          />
+        </svg>
+      </div>
+      <ul id="popup-feature" class="popup-tag-list">
+        <li class="card-feature-items popup-feature">${projects[nbr].tags[0]}</li>
+        <li class="card-feature-items popup-feature">${projects[nbr].tags[1]}</li>
+        <li class="card-feature-items popup-feature">${projects[nbr].tags[2]}</li>
+      </ul>
     </div>
-    <h1 id="popup-header" class="project-heading">${projects[nbr].name}</h1>
-    <ul id="popup-feature" class="popup-tag-list">
-      <li class="card-feature-items popup-feature">${projects[nbr].tags[0]}</li>
-      <li class="card-feature-items popup-feature">${projects[nbr].tags[1]}</li>
-      <li class="card-feature-items popup-feature">${projects[nbr].tags[2]}</li>
-    </ul>
     <div class="popup-info">
       <img
         id="popup-image"
