@@ -7,11 +7,11 @@ menuBtn.addEventListener('click', showHide);
 const xBtn = document.querySelector('#xBtn');
 xBtn.addEventListener('click', showHide);
 
-//  popUp
+//  Work Projects Data
 
 const projects = [
   {
-    name: 'Keeping track of hundreds  of components website',
+    name: 'Multi Post Stories',
     img: './Assets/ex.png',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
@@ -28,7 +28,7 @@ const projects = [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description2:
     'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industrys standard.',
-    tags: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
     demoLink: '',
     codeLink: '',
   },
@@ -44,7 +44,7 @@ const projects = [
     codeLink: '',
   },
   {
-    name: 'Multi Post Stories',
+    name: 'Keeping track of hundreds  of components website',
     img: './Assets/ex.png',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
@@ -78,6 +78,8 @@ const projects = [
   },
 ];
 
+//  Generate Work section from Js file
+
 const works = document.getElementById('card-holder');
 
 for (let i = 0; i < projects.length; i += 1) {
@@ -109,6 +111,8 @@ for (let i = 0; i < projects.length; i += 1) {
   cardHolder.classList.add('work-card');
   works.appendChild(cardHolder);
 }
+
+//  Deatils Popup window
 
 const popup = document.createElement('div');
 function createPopup(nbr) {
@@ -200,4 +204,64 @@ for (let j = 0; j < projects.length; j += 1) {
       popup.remove();
     });
   });
+}
+
+//  Form Validation
+
+const form = document.getElementById('contact_me');
+const fullName = document.getElementById('fullname');
+const email = document.getElementById('email');
+const textAreaMessage = document.getElementById('message');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  validateInputs();
+});
+
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const showError = inputControl.querySelector('.error');
+  showError.innerText = message;
+  inputControl.classList.add('error');
+  inputControl.classList.remove('success');
+};
+
+const setSuccess = element => {
+  const inputControl = element.parentElement;
+  const showError = inputControl.querySelector('.error');
+  showError.innerText = '';
+  inputControl.classList.add('success');
+  inputControl.classList.remove('error');
+};
+
+const isValidEmail = email => {
+  const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  return regex.test(string(email).toLowerCase());
+}
+
+const validateInputs = () => {
+  const fullNameValue = fullName.value.trim();
+  const email = email.value.trim();
+  const textAreaMessageValue = textAreaMessage.value.trim();
+
+  if(fullNameValue === '') {
+    setError(fullName, 'Full name is required');
+  } else {
+    setSuccess(fullName);
+  }
+
+  if(emailValue === '') {
+    setError(email, 'Email is required');
+  } else if(!isValidEmail(emailValue)) {
+    setError(email, 'Invalid email, please enter a valid email');
+  } else {
+    setSuccess(email);
+  }
+
+  if(textAreaMessageValue.length <= 5) {
+    setError(textAreaMessage, 'too short message, please enter more characters');
+  } else {
+    setSuccess(textAreaMessage);
+  }
 }
