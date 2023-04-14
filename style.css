@@ -341,12 +341,6 @@ body {
   overflow: scroll;
 }
 
-/* @media (min-width: 768px) {
-  .popup-window {
-    margin
-  }
-} */
-
 .popUp {
   display: flex;
 }
@@ -995,16 +989,8 @@ body {
   border-bottom-width: thin;
 }
 
-.error {
+.errorMessage {
   color: red;
-}
-
-.input-control.success input {
-  border-color: green;
-}
-
-.input-control.error input {
-  border-color: red;
 }
 
 .form-message {

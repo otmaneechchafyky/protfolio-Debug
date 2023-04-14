@@ -482,14 +482,14 @@
         </div>
         <div class="form-container">
           <form
-            action="https://formspree.io/f/xqknnwvy"
+            action="https://formsubmit.co/echchafykyotmane1@gmail.com"
+            method="POST"
             id="contact_me"
-            method="post"
             class="form"
           >
             <div class="full-name">
               <input
-                class="form-input fullname"
+                class="form-input fullname toStore"
                 type="text"
                 name="fullname"
                 id="fullname"
@@ -497,14 +497,10 @@
                 placeholder="Full Name"
                 required
               />
-              <!-- <input class="form-input firstname" type="text" name="firstname" id="firstname" maxlength="30"
-                            placeholder="First Name" required>
-                        <input class="form-input lastname" type="text" name="lastname" id="lastname" maxlength="30"
-                            placeholder="Last Name" required> -->
             </div>
 
             <input
-              class="form-input"
+              class="form-input email toStore"
               type="email"
               name="email"
               id="email"
@@ -513,7 +509,7 @@
             />
 
             <textarea
-              class="form-message"
+              class="form-message toStore"
               name="message"
               id="message"
               cols="30"
@@ -524,6 +520,7 @@
             ></textarea>
             <small id="errorCheck" class="errorMessage"></small>
             <input
+              id="sub"
               type="submit"
               class="card-button get-my-resume dark-font"
               value="Get In Touch"
