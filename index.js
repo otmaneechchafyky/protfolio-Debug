@@ -227,3 +227,10 @@ function validation(input, showMessage) {
   }
 }
 
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  let emailValid = validation(form.elements['email'], REQUIRED_MESSAGE);
+  if (emailValid) {
+    form.submit();
+  }
+});
